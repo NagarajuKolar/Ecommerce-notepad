@@ -3,6 +3,7 @@
 const togglebtn = document.getElementById("sidebarToggle");
 const side= document.getElementById("sidebar");
 const home=document.getElementById("main-content");
+const sideclose=document.getElementById("closeside");
 
 togglebtn.addEventListener("click",() =>{
     side.classList.toggle("hide-sidebar");
@@ -13,7 +14,21 @@ togglebtn.addEventListener("click",() =>{
   }
 });
 
+sideclose.addEventListener('click',()=>{
+    side.classList.remove("show");
+})
 
+
+  const navToggler = document.getElementById("navToggler");
+  const navItems = document.querySelector(".nav-items");
+  const closenav=document.getElementById("closeNav")
+
+  navToggler.addEventListener("click", () => {
+    navItems.classList.toggle("show");
+  })
+  closenav.addEventListener("click",() =>{
+    navItems.classList.remove("show")
+  })
 
 
 //Carousel
@@ -113,3 +128,40 @@ if (index === 0) {
 
 })
 });
+
+
+//Responsive Clicks
+
+const dropdown1 = document.getElementById("dropdown1");
+const contents=document.querySelector(".dropdown-content");
+
+dropdown1.addEventListener("click",()=>{
+  contents.classList.toggle('show');
+})
+
+
+const dropdown2 = document.getElementById("dropdown2");
+const dropdown3 = document.getElementById("dropdown3");
+const dropcontents1=document.getElementById("dropcontent1");
+const dropcontents2=document.getElementById("dropcontent2");
+
+dropdown2.addEventListener("click",()=>{
+  dropcontents1.classList.toggle('show');
+})
+dropdown3.addEventListener("click",()=>{
+  dropcontents2.classList.toggle('show');
+})
+document.addEventListener("click", (event) =>{
+    if (!dropdown1.contains(event.target)) {
+    contents.classList.remove("show");
+  }
+    if (!dropdown2.contains(event.target)) {
+    dropcontents1.classList.remove("show");
+  }
+    if (!dropdown3.contains(event.target)) {
+    dropcontents2.classList.remove("show");
+  }
+});
+
+
+
