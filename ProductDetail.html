@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Page</title>
-    <link rel="stylesheet" href="Product.css">
+    <title>ProductsDetail Page</title>
+    <link rel="stylesheet" href="ProductDetail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -114,7 +114,7 @@
                         <li class="close-btn">
                             <i class="fa-solid fa-xmark" id="closeNav" style="cursor:pointer;"></i>
                         </li>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home.html">Home</a></li>
 
                         <li class="dropdown" id="dropdown1">
                             <div class="mob-chev">
@@ -198,8 +198,8 @@
             <!-- First Section Title -->
             <div class="cart-first">
                 <div class="cart-title">
-                    <h3>Shop</h3>
-                    <div> <span> Home </span> <span><i class="fa-solid fa-forward icon-gap"></i>Shop Page</span>
+                    <h3>Product Detail</h3>
+                    <div> <span> Home </span> <span><i class="fa-solid fa-forward icon-gap"></i>Product Page</span>
                     </div>
                 </div>
             </div>
@@ -208,335 +208,308 @@
             <!-- Product Section -->
 
             <div class="product">
-                <div class="product-top-section">
-                    <div class="prod-icons">
-                        <button class="list active"><i class="fa-solid fa-list-ul"></i></button>
-                        <button class="grid"><i class="fa-solid fa-grip"></i></button>
-                    </div>
-                    <div class="prod-sort">
-                        <label for="">Sort by :</label>
-                        <select name="sort" id="">
-                             <option value="" disabled selected hidden>Sort by</option>
-                            <option value="Position">Position</option>
-                            <option value="Relevance">Relevance</option>
-                            <option value="Price">Price,High to Low</option>
-                            <option value="Price">Price,Low to High</option>
-                        </select>
-                    </div>
-                </div>
                 <div class="product-main-section ">
-                    <div class="prods-sec list-products ">
-                        <div class="prod-container">
-                            <div class="prod-item">
-                                <div class="product-icons">
-                                    <i class="fa-regular fa-eye"></i>
-                                    <i class="fa-solid fa-code-compare"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="Details-section">
+                        <div class="prods-details-sec ">
+                            <div class="images-sec">
+                                <div class="main-img">
+                                    <img src="./Images/28.jpg" alt="">
                                 </div>
-                                <div class="prodimg">
-                                    <img src="./Images/31.jpg" alt="Normal Image" class="normal">
-                                    <img src="./Images/32.jpg" alt="Hover Image" class="hover">
-                                    <span class="discount-label">New</span>
-                                </div>
-                                <div class="prod-size">
-                                    <div>Shirt</div>
-                                    <div>S M L XL</div>
-                                </div>
-                                <div class="prod-name">Cotton Fabric Tshirt</div>
-                                <div class="prod-price"><span class="new-price">$120</span> <span
-                                        class="old-price">$130</span></div>
-                                <div class="prod-colors">
-                                    <div>
-                                        <span class="dot color1"></span>
-                                        <span class="dot color2"></span>
+                                <div class="similar-imgs">
+                                    <div class="img-list">
+                                        <img src="./Images/28.jpg" alt="">
+                                        <img src="./Images/29 (1).jpg" alt="">
+                                        <img src="./Images/27.jpg" alt="">
+                                        <img src="./Images/28.jpg" alt="">
+                                        <img src="./Images/29 (1).jpg" alt="">
+                                        <img src="./Images/27.jpg" alt="">
                                     </div>
-                                    <div><i class="fa-regular fa-heart"></i></div>
-                                </div>
-                            </div>
-
-                            <div class="prod-item">
-                                <div class="product-icons">
-                                    <i class="fa-regular fa-eye"></i>
-                                    <i class="fa-solid fa-code-compare"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                                <div class="prodimg">
-                                    <img src="./Images/33 (0).jpg" alt="Normal Image" class="normal">
-                                    <img src="./Images/33 (1).jpg" alt="Hover Image" class="hover">
-                                    <span class="discount-label">Trending</span>
-                                </div>
-                                <div class="prod-size">
-                                    <div>Shirt</div>
-                                    <div>S M L XL</div>
-                                </div>
-                                <div class="prod-name">Cotton Fabric Tshirt</div>
-                                <div class="prod-price"><span class="new-price">$120</span> <span
-                                        class="old-price">$130</span></div>
-                                <div class="prod-colors">
-                                    <div>
-                                        <span class="dot color3"></span>
-                                        <span class="dot color4"></span>
+                                    <div class="control-icons">
+                                        <button id="previcon">&#10094;</button>
+                                        <button id="nexticon">&#10095;</button>
                                     </div>
-                                    <div><i class="fa-regular fa-heart"></i></div>
-                                </div>
-                            </div>
-
-                            <div class="prod-item">
-                                <div class="product-icons">
-                                    <i class="fa-regular fa-eye"></i>
-                                    <i class="fa-solid fa-code-compare"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                                <div class="prodimg">
-                                    <img src="./Images/39.jpg" alt="Normal Image" class="normal">
-                                    <img src="./Images/39 (1).jpg" alt="Hover Image" class="hover">
-                                    <span class="discount-label">New</span>
-                                </div>
-                                <div class="prod-size">
-                                    <div>Shirt</div>
-                                    <div>S M L XL</div>
-                                </div>
-                                <div class="prod-name">Cotton Fabric Tshirt</div>
-                                <div class="prod-price"><span class="new-price">$120</span> <span
-                                        class="old-price">$130</span></div>
-                                <div class="prod-colors">
-                                    <div>
-                                        <span class="dot color3"></span>
-                                        <span class="dot color5"></span>
-                                        <span class="dot color2"></span>
-                                    </div>
-                                    <div><i class="fa-regular fa-heart"></i></div>
                                 </div>
 
 
                             </div>
+                            <div class="details-section">
+                                <h4 class="detail-title">Mantu Women's Solid Slim Fit Classic Round Neck cotton fabric
+                                    T-Shirt.</h4>
 
-                            <div class="prod-item">
-                                <div class="product-icons">
-                                    <i class="fa-regular fa-eye"></i>
-                                    <i class="fa-solid fa-code-compare"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
+                                <div class="reviews">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                    <span> | </span>
+                                    <span> 992 Ratings </span>
                                 </div>
-                                <div class="prodimg">
-                                    <img src="./Images/31.jpg" alt="Normal Image" class="normal">
-                                    <img src="./Images/32.jpg" alt="Hover Image" class="hover">
-                                    <span class="discount-label">New</span>
+
+                                <div class="pricing">
+                                    <h3>$664.00 <span class="discount">-78%</span></h3>
+                                    <h3>SKU#: 5412</h3>
                                 </div>
-                                <div class="prod-size">
-                                    <div>Shirt</div>
-                                    <div>S M L XL</div>
+                                <div class="old-pricing">
+                                    <h4>M.R.P. : <span class="old-money">$2,999.00</span></h4>
+                                    <h4 class="stock">IN STOCK</h4>
                                 </div>
-                                <div class="prod-name">Cotton Fabric Tshirt</div>
-                                <div class="prod-price"><span class="new-price">$120</span> <span
-                                        class="old-price">$130</span></div>
-                                <div class="prod-colors">
-                                    <div>
-                                        <span class="dot color3"></span>
-                                        <span class="dot color5"></span>
-                                        <span class="dot color2"></span>
+                                <div class="live-info">
+                                    <p>Real time <span class="visitor-count">56</span> visitor right now!</p>
+                                    <div class="countdown">
+                                        <div>
+                                            <strong id="days">2</strong>
+                                            <span>Days</span>
+                                            <strong id="time"> HH:MM:SS</strong>
+                                        </div>
+
+                                        <span>Time is Running Out!</span>
                                     </div>
-                                    <div><i class="fa-regular fa-heart"></i></div>
+                                </div>
+
+                                <div class="detail-description">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1990.</p>
+                                    <ul>
+                                        <li><strong>Closure :</strong> Hook & Loop</li>
+                                        <li><strong>Sole :</strong> Polyvinyl Chloride</li>
+                                        <li><strong>Width :</strong> Medium</li>
+                                        <li><strong>Outer Material :</strong> A-Grade Standard Quality</li>
+                                    </ul>
+                                </div>
+
+                                <div class="product-options">
+                                    <div class="size-section">
+                                        <h5>SIZE</h5>
+                                        <div class="sizes">
+                                            <button class="active">S</button>
+                                            <button>M</button>
+                                            <button>L</button>
+                                            <button>XL</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-color-section">
+                                        <h5>COLORS</h5>
+                                        <div class="detail-colors">
+                                            <span class="detail-color blue active"></span>
+                                            <span class="detail-color lightblue"></span>
+                                            <span class="detail-color green"></span>
+                                            <span class="detail-color beige"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="action-bar">
+                                    <div class="quantity-control">
+                                        <button>-</button>
+                                        <span>6</span>
+                                        <button>+</button>
+                                    </div>
+                                    <button class="add-cart">ADD TO CART</button>
+                                    <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                                    <button class="icon-btn"><i class="fa-solid fa-share-nodes"></i></button>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="similar-prods">
+                            <div class="sim-item">
+                                <span class="sim-icon"><i class="fa-solid fa-plus"></i></span></i>
+                                <img src="./Images/11.jpg" alt="">
+                                <div class="sim-item-desc">
+                                    <div class="name">Honey Spiced Nutes</div>
+                                    <div class="reviews">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
+                                    </div>
+                                    <div class="prices">
+                                        <p><strong>$32</strong></p>
+                                        <p class="old">$45</p>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="prod-item">
-                                <div class="product-icons">
-                                    <i class="fa-regular fa-eye"></i>
-                                    <i class="fa-solid fa-code-compare"></i>
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </div>
-                                <div class="prodimg">
-                                    <img src="./Images/6.jpg" alt="Normal Image" class="normal">
-                                    <img src="./Images/6 (1).jpg" alt="Hover Image" class="hover">
-                                    <span class="discount-label">New</span>
-                                </div>
-                                <div class="prod-size">
-                                    <div>Shirt</div>
-                                    <div>S M L XL</div>
-                                </div>
-                                <div class="prod-name">Cotton Fabric Tshirt</div>
-                                <div class="prod-price"><span class="new-price">$120</span> <span
-                                        class="old-price">$130</span></div>
-                                <div class="prod-colors">
-                                    <div>
-                                        <span class="dot color3"></span>
-                                        <span class="dot color5"></span>
-                                        <span class="dot color2"></span>
+                            <div class="sim-item">
+                                <span class="sim-icon"><i class="fa-solid fa-plus"></i></span></i>
+                                <img src="./Images/17.jpg" alt="">
+                                <div class="sim-item-desc">
+                                    <div class="name">Honey Spiced Nutes</div>
+                                    <div class="reviews">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
                                     </div>
-                                    <div><i class="fa-regular fa-heart"></i></div>
+                                    <div class="prices">
+                                        <p>$32</p>
+                                        <p class="old">$45</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-item">
+                                <span class="sim-icon"><i class="fa-solid fa-plus"></i></span></i>
+                                <img src="./Images/31.jpg" alt="">
+                                <div class="sim-item-desc">
+                                    <div class="name">Honey Spiced Nutes</div>
+                                    <div class="reviews">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
+                                    </div>
+                                    <div class="prices">
+                                        <p>$32</p>
+                                        <p class="old">$45</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="fil-line"></div>
 
-                        <div class="pagination-container">
-                            <div class="pagination-info">Showing 1–12 of 21 item(s)</div>
-                            <div class="pagination">
-                                <button class="page active">1</button>
-                                <a href=""><button class="page">2</button></a>
-                                <button class="page">3</button>
-                                <span class="">…</span>
-                                <button class="page">8</button>
-                                <button class="next">Next »</button>
+                        <!-- Details,specifications,vendor,reviews -->
+
+                        <div class="detail-bottom">
+                            <div class="btm-buttons">
+                                <button class="active" id="detail">Details</button>
+                                <button id="specification">specifications</button>
+                                <button id="vendor">Vendor</button>
+                                <button id="review">Reviews</button>
+                            </div>
+                            <div class="content-section">
+
+                                <!-- Detail Section -->
+
+                                <div class="detail-button">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                        when an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen book. It has survived not only five centuries, but also the leap
+                                        into electronic typesetting, remaining essentially unchanged.</p>
+                                    <ul class="detail-list">
+                                        <li><strong>Any Product types that You want</strong> – Simple, Configurable</li>
+                                        <li><strong>Downloadable/Digital Products, Virtual Products</strong></li>
+                                        <li><strong>Inventory Management with Backordered items</strong></li>
+                                        <li><strong>Flatlock seams throughout.</strong></li>
+                                    </ul>
+                                    <br>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text
+                                        ever since the 1500s, when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged.</p><br>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour,
+                                        or randomised words which don't look even slightly believable. If you are going
+                                        to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                        anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                        generators on the Internet tend to repeat predefined chunks as necessary,
+                                        making this the first true generator on the Internet. It uses a dictionary of
+                                        over 200 Latin words, combined with a handful of model sentence structures,
+                                        to generate Lorem Ipsum which looks reasonable.
+                                        The generated Lorem Ipsum is therefore always free from repetition, injected
+                                        humour, or non-characteristic words etc.</p><br>
+                                </div>
+
+                                <!-- Specification Section -->
+
+                                <div class="specifications-button" style="display: none;">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text
+                                        ever since the 1500s, when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged.</p>
+                                    <ul class="spec-list">
+                                        <li><strong>Model</strong><span>SKU140</span></li>
+                                        <li><strong>Weight</strong><span>500 g</span></li>
+                                        <li><strong>Dimensions</strong><span>35 × 30 × 7 cm</span></li>
+                                        <li><strong>Color</strong><span>Black, Pink, Red, White</span></li>
+                                        <li><strong>Size</strong><span>10 X 20</span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="Vendor-button" style="display: none;">
+                                    <div class="vendor-header">
+                                        <img src="./Images/1 (1).jpg" alt="Vendor Image">
+                                        <div class="vendor-info">
+                                            <h3>Ocean Crate</h3>
+                                            <p>Products : <span>358</span></p>
+                                            <p>Sales : <span>5587</span></p>
+                                        </div>
+                                    </div>
+
+                                    <ul class="vendor-details">
+                                        <li><strong>Phone No. :</strong> <span>+00 987654321</span></li>
+                                        <li><strong>Email. :</strong> <span>Example@gmail.com</span></li>
+                                        <li><strong>Address. :</strong> <span>2548 Broaddus Maple Court, Madisonville KY
+                                                4783, USA.</span></li>
+                                    </ul>
+
+                                    <p class="vendor-desc">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text
+                                        ever since the 1500s, when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged
+                                    </p>
+                                </div>
+
+
+                                <div class="review-button" style="display: none;">
+                                    <div class="review">
+                                        <img src="./Images/1.jpg" alt="User Image">
+                                        <div class="review-content">
+                                            <div class="review-header">
+                                                <h4>Mariya Lykra</h4>
+                                                <div class="stars">★ ★ ★ ★ ☆</div>
+                                            </div>
+                                            <p>Lorem Ipsum has been te industry's standard dummy text ever since the
+                                                1500s, when an unknown printer took a galley of type and scrambled it to
+                                                make a type specimen.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="review">
+                                        <img src="./Images/2.jpg" alt="User Image">
+                                        <div class="review-content">
+                                            <div class="review-header">
+                                                <h4>Moris Willson</h4>
+                                                <div class="stars">★ ★ ★ ☆ ☆</div>
+                                            </div>
+                                            <p>Lorem Ipsum has been te industry's standard dummy text ever since the
+                                                1500s, when an unknown printer took a galley of type and scrambled it to
+                                                make a type specimen.</p>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="add-review">
+                                        <h3>Add a Review</h3>
+                                        <p>Your rating: <span class="stars">★☆☆☆☆</span></p>
+
+                                        <form>
+                                            <input type="text" placeholder="Name" required>
+                                            <input type="email" placeholder="Email*" required>
+                                            <textarea rows="4" placeholder="Enter Your Comment" required></textarea>
+                                            <button type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <div class="prods-sec grid-products" style="display:none">
-                        <div class="prod-container">
 
-                            <div class="grid-prod-item">
-                                <div class="image-section">
-                                    <div class="grid-product-icons">
-                                        <i class="fa-regular fa-eye"></i>
-                                        <i class="fa-solid fa-code-compare"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    <div class="gridprodimg">
-                                        <img src="./Images/31.jpg" alt="Normal Image" class="normal">
-                                        <img src="./Images/32.jpg" alt="Hover Image" class="hover">
-                                        <span class="discount-label">New</span>
-                                    </div>
-                                </div>
-                                <div class="desc-section">
-                                    <div class="prod-size">
-                                        <div>Shirt</div>
-                                        <div>S M L XL</div>
-                                    </div>
-                                    <div class="prod-name">Cotton Fabric Tshirt</div>
-                                    <div class="prod-desc">Lorem Ipsum is simply dummy text of the printing and
-                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                        ever since the 1500s.</div>
-                                    <div class="prod-price"><span class="new-price">$120</span> <span
-                                            class="old-price">$130</span></div>
-                                    <div class="prod-colors">
-                                        <div>
-                                            <span class="dot color3"></span>
-                                            <span class="dot color5"></span>
-                                            <span class="dot color2"></span>
-                                        </div>
-                                        <div><i class="fa-regular fa-heart"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="grid-prod-item">
-                                <div class="image-section">
-                                    <div class="grid-product-icons">
-                                        <i class="fa-regular fa-eye"></i>
-                                        <i class="fa-solid fa-code-compare"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    <div class="gridprodimg">
-                                        <img src="./Images/31.jpg" alt="Normal Image" class="normal">
-                                        <img src="./Images/32.jpg" alt="Hover Image" class="hover">
-                                        <span class="discount-label">New</span>
-                                    </div>
-                                </div>
-                                <div class="desc-section">
-                                    <div class="prod-size">
-                                        <div>Shirt</div>
-                                        <div>S M L XL</div>
-                                    </div>
-                                    <div class="prod-name">Cotton Fabric Tshirt</div>
-                                    <div class="prod-desc">Lorem Ipsum is simply dummy text of the printing and
-                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                        ever since the 1500s.</div>
-                                    <div class="prod-price"><span class="new-price">$120</span> <span
-                                            class="old-price">$130</span></div>
-                                    <div class="prod-colors">
-                                        <div>
-                                            <span class="dot color3"></span>
-                                            <span class="dot color5"></span>
-                                            <span class="dot color2"></span>
-                                        </div>
-                                        <div><i class="fa-regular fa-heart"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="grid-prod-item">
-                                <div class="image-section">
-                                    <div class="grid-product-icons">
-                                        <i class="fa-regular fa-eye"></i>
-                                        <i class="fa-solid fa-code-compare"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    <div class="gridprodimg">
-                                        <img src="./Images/31.jpg" alt="Normal Image" class="normal">
-                                        <img src="./Images/32.jpg" alt="Hover Image" class="hover">
-                                        <span class="discount-label">New</span>
-                                    </div>
-                                </div>
-                                <div class="desc-section">
-                                    <div class="prod-size">
-                                        <div>Shirt</div>
-                                        <div>S M L XL</div>
-                                    </div>
-                                    <div class="prod-name">Cotton Fabric Tshirt</div>
-                                    <div class="prod-desc">Lorem Ipsum is simply dummy text of the printing and
-                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                        ever since the 1500s.</div>
-                                    <div class="prod-price"><span class="new-price">$120</span> <span
-                                            class="old-price">$130</span></div>
-                                    <div class="prod-colors">
-                                        <div>
-                                            <span class="dot color3"></span>
-                                            <span class="dot color5"></span>
-                                            <span class="dot color2"></span>
-                                        </div>
-                                        <div><i class="fa-regular fa-heart"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="grid-prod-item">
-                                <div class="image-section">
-                                    <div class="grid-product-icons">
-                                        <i class="fa-regular fa-eye"></i>
-                                        <i class="fa-solid fa-code-compare"></i>
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </div>
-                                    <div class="gridprodimg">
-                                        <img src="./Images/31.jpg" alt="Normal Image" class="normal">
-                                        <img src="./Images/32.jpg" alt="Hover Image" class="hover">
-                                        <span class="discount-label">New</span>
-                                    </div>
-                                </div>
-                                <div class="desc-section">
-                                    <div class="prod-size">
-                                        <div>Shirt</div>
-                                        <div>S M L XL</div>
-                                    </div>
-                                    <div class="prod-name">Cotton Fabric Tshirt</div>
-                                    <div class="prod-desc">Lorem Ipsum is simply dummy text of the printing and
-                                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                                        ever since the 1500s.</div>
-                                    <div class="prod-price"><span class="new-price">$120</span> <span
-                                            class="old-price">$130</span></div>
-                                    <div class="prod-colors">
-                                        <div>
-                                            <span class="dot color3"></span>
-                                            <span class="dot color5"></span>
-                                            <span class="dot color2"></span>
-                                        </div>
-                                        <div><i class="fa-regular fa-heart"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pagination-container">
-                            <div class="pagination-info">Showing 1–12 of 21 item(s)</div>
-                            <div class="pagination">
-                                <button class="page active">1</button>
-                                <button class="page">2</button>
-                                <button class="page">3</button>
-                                <span class="dots">…</span>
-                                <button class="page">8</button>
-                                <button class="next">Next »</button>
-                            </div>
-                        </div>
-                    </div>
 
 
 
@@ -546,19 +519,6 @@
                         <div class="filter-top-content">
                             <h3>Filters</h3>
                             <div class="fil-line"></div>
-                            <!-- <details class="cat-dropdown">
-                                <summary>
-                                    <span class="summ">Clothes
-                                        <i class="fa-solid fa-plus"></i>
-                                    </span>
-                                </summary>
-                                <ul>
-                                    <li>Men</li>
-                                    <li>Women</li>
-                                    <li>Boy</li>
-                                </ul>
-                            </details> -->
-
                             <div class="cat-dropdown">
                                 <div class="dropdown-toggle">
                                     <span class="summ">Clothes <i class="fa-solid fa-plus"></i></span>
@@ -660,12 +620,9 @@
                         </div>
 
                     </div>
+
                 </div>
-
             </div>
-
-
-
 
 
             <!-- Footer-section -->
@@ -748,11 +705,19 @@
                 </div>
             </div>
 
-
         </div>
+
+
+
+
+
+
+
+
+    </div>
     </div>
 
-    <script src="Product.js"></script>
+    <script src="productdetail.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Page</title>
+    <link rel="stylesheet" href="compare.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Logo</h1>
+        <button type="button" class="buy">Buy now</button>
+    </div>
+
+    <div class="Home" id="Home-container">
+        <div class="sidebar" id="sidebar">
+            <div class="side-container">
+                <div class="close-side">
+                    <i class="fa-solid fa-xmark" id="closeside" style="cursor:pointer;"></i>
+                </div>
+                <h4>FASHION</h4>
+                <div class="line"></div>
+                <details>
+                    <summary><i class="fa-solid fa-shirt"></i> Clothes</summary>
+                    <ul class="summary">
+                        <li><a href="">Shirts</a></li>
+                        <li><a href="">Tshirts</a></li>
+                        <li><a href="">Gowns</a></li>
+                        <li><a href="">Pants</a></li>
+                    </ul>
+                </details>
+                <li class="no-mark"><a href=""><img src="./Images/shoes.svg" style="width:25px;height:25px;"
+                            alt="shoes">
+                        Shoes</a></li>
+                <li class="no-mark"><a href=""><i class="fa-solid fa-glasses"></i> Glasses</a></li>
+                <details>
+                    <summary> <i class="fa-solid fa-bag-shopping"></i> Bags</summary>
+                    <ul class="summary">
+                        <li><a href="">Purse</a></li>
+                        <li><a href="">Bags</a></li>
+                        <li><a href="">Wallet</a></li>
+                    </ul>
+                </details>
+                <li class="no-mark"><a href=""><i class="fa-solid fa-hat-cowboy"></i> Hat</a></li>
+                <details>
+                    <summary><img src="./Images/makeup.svg" style="width:25px;height:25px;" alt="shoes"> Makeup
+                    </summary>
+                    <ul class="summary">
+                        <li><a href="">Lipstick</a></li>
+                        <li><a href="">EyeLiner</a></li>
+                        <li><a href="">Nail Paint</a></li>
+                        <li><a href="">Makeup Kit</a></li>
+                    </ul>
+                </details>
+
+                <h4>BAKERY </h4>
+                <div class="line"></div>
+                <details>
+                    <summary><i class="fa-solid fa-cake-candles"></i> Cake</summary>
+                    <ul class="summary">
+                        <li><a href="">Cup Cake</a></li>
+                        <li><a href="">Pastry</a></li>
+                        <li><a href="">Cake</a></li>
+                    </ul>
+                </details>
+                <li class="no-mark"><img src="./Images/bread.svg" style="width:25px;height:25px;" alt="bread"><a
+                        href="">Bread</a></li>
+
+                <h4>VEGETABLES </h4>
+                <div class="line"></div>
+                <details>
+                    <summary>Tuber Root</summary>
+                    <ul class="summary">
+                        <li><a href="">Sweet Potato</a></li>
+                        <li><a href="">Ginger</a></li>
+                        <li><a href="">Cassava</a></li>
+                    </ul>
+                </details>
+                <li class="no-mark">
+                    <img src="./Images/tomato.svg" style="width:25px;height:25px;" alt="tom">
+                    <a href="">Tomato</a>
+                </li>
+                <li class="no-mark">
+                    <img src="./Images/lemon.svg" style="width:25px;height:25px;" alt="lemons">
+                    <a href=""> Lemon</a>
+                </li>
+
+                <h4>VEGETABLES </h4>
+                <div class="line"></div>
+                <li class="no-mark"><a href="">Avocado</a></li>
+                <li class="no-mark"><a href="">Strawberry</a></li>
+                <li class="no-mark"><a href="">Cherry</a></li>
+                <li class="no-mark"><a href="">Lychee</a></li>
+            </div>
+        </div>
+        <div class="main-content" id="main-content">
+            <div class="navbar">
+                <div class="nav-left">
+                    <div class="sidebar-toggle" id="sidebarToggle">
+                        <i class="fa-solid fa-sliders" style="font-size:26px;padding:0px 15px; cursor:pointer"></i>
+                    </div>
+                    <img src="./Images/logo.png" alt="Logo" style="width:138px;height:36px">
+                    <div class="navtoggler" id="navToggler">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="navbar-menu">
+                    <ul class="nav-items" style="list-style:none;">
+                        <li class="close-btn">
+                            <i class="fa-solid fa-xmark" id="closeNav" style="cursor:pointer;"></i>
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+
+                        <li class="dropdown" id="dropdown1">
+                            <div class="mob-chev">
+                                <a href="#">Categories</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="items">
+                                    <a href="#">Classic</a>
+                                    <hr />
+                                    <a href="#">Shop Right Sidebar</a>
+                                    <a href="#">Banner Right Sidebar</a>
+                                    <a href="#">Shop Full Width</a>
+                                </div>
+                                <div class="items">
+                                    <a href="#">List</a>
+                                    <hr />
+                                    <a href="#">Shop Right Sidebar</a>
+                                    <a href="#">Banner Right Sidebar</a>
+                                    <a href="#">Shop Full Width</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown" id="dropdown2">
+                            <div class="mob-chev">
+                                <a href="#">Products</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-contents" id="dropcontent1">
+                                <div class="item">
+                                    <a href="Product.html">Product Detail</a>
+                                    <a href="#">Product Accordion</a>
+                                    <a href="#">Product Full Width</a>
+                                    <a href="#">Accordion Full width</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="dropdown" id="dropdown3">
+                            <div class="mob-chev">
+                                <a href="#">Pages</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-contents" id="dropcontent2">
+                                <div class="item">
+                                    <div class="inner-drop">
+                                        <a href="#">Blog <span class="down-arrow"> v<span /> </a>
+                                        <div class="inner-dropcontent">
+                                            <a href="ProductDetail.html">Product Detail</a>
+                                            <a href="productaccordion.html">Product Accordion</a>
+                                            <a href="#">Product Full Width</a>
+                                            <a href="#">Accordion Full width</a>
+                                        </div>
+
+                                    </div>
+
+                                    <a href="Aboutus.html">About Us</a>
+                                    <a href="Contactus.html">Contact Us</a>
+                                    <a href="Cart.html">Cart</a>
+                                    <a href="Checkout.html">Checkout</a>
+                                    <a href="compare.html">Compare</a>
+                                    <a href="Faq.html">Faq</a>
+                                    <a href="login.html">Login</a>
+                                    <a href="Register.html">Register</a>
+                                </div>
+                        </li>
+                        <li><a href="home.html">Blog</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li><i class="fa-regular fa-user"></i></li>
+                        <li><i class="fa-regular fa-heart"></i></li>
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Main Content -->
+            <!-- First Section Title -->
+            <div class="cart-first">
+                <div class="cart-title">
+                    <h3>Product Detail</h3>
+                    <div> <span> Home </span> <span><i class="fa-solid fa-forward icon-gap"></i>Product Page</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compare-section -->
+
+            <div class="compare-section">
+                <div class="compare-grid">
+                    <div class="title-column">
+                        <h5>Product Image</h5>
+                        <h5 class="second">Name</h5>
+                        <h5>Category</h5>
+                        <h5>Ratings</h5>
+                        <h5>Availability</h5>
+                        <h5>Location</h5>
+                        <h5>Brand</h5>
+                        <h5>SKU</h5>
+                        <h5>Quantity</h5>
+                        <h5 class="desc">Description</h5>
+                    </div>
+
+                    <!-- Product 1 -->
+                    <div class="product-column">
+                        <div class="img-icon">
+                            <img src="./Images/35.jpg" alt="">
+                            <div class="product-icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                        <p>Men office suit cotton</p>
+                        <p>Snack & Spices</p>
+                        <div class="stars">★ ★ ★ ★ ☆ <span> (15 Reviews)</span></div>
+                        <p class="in-stock">In Stock</p>
+                        <p>In Store, Online</p>
+                        <p>Bhisma Fashion</p>
+                        <p>00000</p>
+                        <p>1</p>
+                        <p class="desc">There are many variations of passages of Lorem Ipsum available, but the majority
+                            have suffered alteration in some form, by injected </p>
+                    </div>
+
+
+                    <div class="product-column">
+                        <div class="img-icon">
+                            <img src="./Images/32.jpg" alt="">
+                            <div class="product-icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                        <p>Round neck cotton t-shirt</p>
+                        <p>T-shirt</p>
+                        <div class="stars">★ ★ ★ ★ ★ <span> (654 Reviews)</span></div>
+                        <p class="out-stock">Out Of Stock</p>
+                        <p>Online</p>
+                        <p>Darsh Store</p>
+                        <p>00000</p>
+                        <p>2</p>
+                        <p class="desc">Recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum</p>
+                    </div>
+
+
+                    <div class="product-column">
+                        <div class="img-icon">
+                            <img src="./Images/39.jpg" alt="">
+                            <div class="product-icons" ">
+                                <i class=" fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                        <p>T-shirt for womens</p>
+                        <p>Clothes</p>
+                        <div class="stars">★ ★ ★ ☆ ☆ <span> (654 Reviews)</span></div>
+                        <p class="in-stock">In Stock</p>
+                        <p>In Store</p>
+                        <p>Peoples Store</p>
+                        <p>2546</p>
+                        <p>1</p>
+                        <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard.</p>
+                    </div>
+
+
+                    <div class="product-column">
+                        <div class="img-icon">
+                            <img src="./Images/39.jpg" alt="">
+                            <div class="product-icons" ">
+                                <i class=" fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                        <p>T-shirt for womens</p>
+                        <p>Clothes</p>
+                        <div class="stars">★ ★ ★ ☆ ☆ <span>(654 Reviews)</span></div>
+                        <p class="in-stock">In Stock</p>
+                        <p>In Store</p>
+                        <p>Peoples Store</p>
+                        <p>2546</p>
+                        <p>1</p>
+                        <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer-section -->
+            <div class="footer-section">
+                <div class="footer">
+                    <div class="footer-top">
+                        <div class="grid-1">
+                            <img src="./Images/logo-dark.png" alt="logo">
+                            <p>The Mantu is the biggest market of grocery products. Get your daily needs from our store.
+                            </p>
+                            <img src="./Images/android.png" alt="android">
+                            <img src="./Images/apple.png" alt="apple">
+                        </div>
+                        <div class="grid-2">
+                            <h4>Category</h4>
+                            <div class="underline"></div>
+                            <ul>
+                                <li>Fashion</li>
+                                <li>Cosmetics</li>
+                                <li>Bags & Purses</li>
+                                <li>Shoes</li>
+                                <li>Belts</li>
+                                <li>Perfumes</li>
+                            </ul>
+                        </div>
+                        <div class="grid-3">
+                            <h4>Company</h4>
+                            <div class="underline"></div>
+                            <ul>
+                                <li>About us</li>
+                                <li>Delivery</li>
+                                <li>Legal Notice</li>
+                                <li>Terms of Use</li>
+                                <li>Secure Payment</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </div>
+                        <div class="grid-4">
+
+                            <h4>Account</h4>
+                            <div class="underline"></div>
+                            <ul>
+                                <li>Sign In</li>
+                                <li>View Cart</li>
+                                <li>Return Policy</li>
+                                <li>Become a Vendor</li>
+                                <li>Affiliate Program</li>
+                                <li>Payments</li>
+                            </ul>
+                        </div>
+                        <div class="grid-5">
+                            <h4>Contact</h4>
+                            <div class="underline"></div>
+                            <div class="adress">
+                                <p><i class="fa-solid fa-location-dot ad-icon"></i>1234 Elm Street Springfield Avenue,
+                                    Brooklyn den, IL
+                                    62704 USA.</p>
+                                <p><i class="fa-brands fa-whatsapp ad-icon"></i> +00 9876543210</p>
+                                <p><i class="fa-solid fa-envelope ad-icon"></i> example@email.com</p>
+                                <div class="social-icons">
+                                    <span><i class="fa-brands fa-square-facebook"></i></span>
+                                    <span><i class="fa-brands fa-square-twitter"></i></span>
+                                    <span><i class="fa-brands fa-linkedin"></i></span>
+                                    <span><i class="fa-brands fa-instagram"></i></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="topline"></div>
+                        <div class="bottom">
+                            <p>Copyright © 2025 The Mantu all rights reserved.</p>
+                            <div>
+                                <img src="./Images/payment.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+    <script src="productdetail.js"></script>
+</body>
+
+</html>

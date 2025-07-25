@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Page</title>
+    <link rel="stylesheet" href="productaccord.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Logo</h1>
+        <button type="button" class="buy">Buy now</button>
+    </div>
+
+    <div class="Home" id="Home-container">
+        <div class="sidebar" id="sidebar">
+            <div class="side-container">
+                <div class="close-side">
+                    <i class="fa-solid fa-xmark" id="closeside" style="cursor:pointer;"></i>
+                </div>
+                <h4>FASHION</h4>
+                <div class="line"></div>
+                <details>
+                    <summary><i class="fa-solid fa-shirt"></i> Clothes</summary>
+                    <ul class="summary">
+                        <li><a href="">Shirts</a></li>
+                        <li><a href="">Tshirts</a></li>
+                        <li><a href="">Gowns</a></li>
+                        <li><a href="">Pants</a></li>
+                    </ul>
+                </details>
+                <li class="no-mark"><a href=""><img src="./Images/shoes.svg" style="width:25px;height:25px;"
+                            alt="shoes">
+                        Shoes</a></li>
+                <li class="no-mark"><a href=""><i class="fa-solid fa-glasses"></i> Glasses</a></li>
+                <details>
+                    <summary> <i class="fa-solid fa-bag-shopping"></i> Bags</summary>
+                    <ul class="summary">
+                        <li><a href="">Purse</a></li>
+                        <li><a href="">Bags</a></li>
+                        <li><a href="">Wallet</a></li>
+                    </ul>
+                </details>
+                <li class="no-mark"><a href=""><i class="fa-solid fa-hat-cowboy"></i> Hat</a></li>
+                <details>
+                    <summary><img src="./Images/makeup.svg" style="width:25px;height:25px;" alt="shoes"> Makeup
+                    </summary>
+                    <ul class="summary">
+                        <li><a href="">Lipstick</a></li>
+                        <li><a href="">EyeLiner</a></li>
+                        <li><a href="">Nail Paint</a></li>
+                        <li><a href="">Makeup Kit</a></li>
+                    </ul>
+                </details>
+
+                <h4>BAKERY </h4>
+                <div class="line"></div>
+                <details>
+                    <summary><i class="fa-solid fa-cake-candles"></i> Cake</summary>
+                    <ul class="summary">
+                        <li><a href="">Cup Cake</a></li>
+                        <li><a href="">Pastry</a></li>
+                        <li><a href="">Cake</a></li>
+                    </ul>
+                </details>
+                <li class="no-mark"><img src="./Images/bread.svg" style="width:25px;height:25px;" alt="bread"><a
+                        href="">Bread</a></li>
+
+                <h4>VEGETABLES </h4>
+                <div class="line"></div>
+                <details>
+                    <summary>Tuber Root</summary>
+                    <ul class="summary">
+                        <li><a href="">Sweet Potato</a></li>
+                        <li><a href="">Ginger</a></li>
+                        <li><a href="">Cassava</a></li>
+                    </ul>
+                </details>
+                <li class="no-mark">
+                    <img src="./Images/tomato.svg" style="width:25px;height:25px;" alt="tom">
+                    <a href="">Tomato</a>
+                </li>
+                <li class="no-mark">
+                    <img src="./Images/lemon.svg" style="width:25px;height:25px;" alt="lemons">
+                    <a href=""> Lemon</a>
+                </li>
+
+                <h4>VEGETABLES </h4>
+                <div class="line"></div>
+                <li class="no-mark"><a href="">Avocado</a></li>
+                <li class="no-mark"><a href="">Strawberry</a></li>
+                <li class="no-mark"><a href="">Cherry</a></li>
+                <li class="no-mark"><a href="">Lychee</a></li>
+            </div>
+        </div>
+        <div class="main-content" id="main-content">
+            <div class="navbar">
+                <div class="nav-left">
+                    <div class="sidebar-toggle" id="sidebarToggle">
+                        <i class="fa-solid fa-sliders" style="font-size:26px;padding:0px 15px; cursor:pointer"></i>
+                    </div>
+                    <img src="./Images/logo.png" alt="Logo" style="width:138px;height:36px">
+                    <div class="navtoggler" id="navToggler">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="navbar-menu">
+                    <ul class="nav-items" style="list-style:none;">
+                        <li class="close-btn">
+                            <i class="fa-solid fa-xmark" id="closeNav" style="cursor:pointer;"></i>
+                        </li>
+                        <li><a href="home.html">Home</a></li>
+
+                        <li class="dropdown" id="dropdown1">
+                            <div class="mob-chev">
+                                <a href="#">Categories</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <div class="items">
+                                    <a href="#">Classic</a>
+                                    <hr />
+                                    <a href="#">Shop Right Sidebar</a>
+                                    <a href="#">Banner Right Sidebar</a>
+                                    <a href="#">Shop Full Width</a>
+                                </div>
+                                <div class="items">
+                                    <a href="#">List</a>
+                                    <hr />
+                                    <a href="#">Shop Right Sidebar</a>
+                                    <a href="#">Banner Right Sidebar</a>
+                                    <a href="#">Shop Full Width</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="dropdown" id="dropdown2">
+                            <div class="mob-chev">
+                                <a href="#">Products</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-contents" id="dropcontent1">
+                                <div class="item">
+                                    <a href="Product.html">Product Detail</a>
+                                    <a href="#">Product Accordion</a>
+                                    <a href="#">Product Full Width</a>
+                                    <a href="#">Accordion Full width</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="dropdown" id="dropdown3">
+                            <div class="mob-chev">
+                                <a href="#">Pages</a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="dropdown-contents" id="dropcontent2">
+                                <div class="item">
+                                    <div class="inner-drop">
+                                        <a href="#">Blog <span class="down-arrow"> v<span /> </a>
+                                        <div class="inner-dropcontent">
+                                            <a href="ProductDetail.html">Product Detail</a>
+                                            <a href="productaccordion.html">Product Accordion</a>
+                                            <a href="#">Product Full Width</a>
+                                            <a href="#">Accordion Full width</a>
+                                        </div>
+
+                                    </div>
+
+                                    <a href="Aboutus.html">About Us</a>
+                                    <a href="Contactus.html">Contact Us</a>
+                                    <a href="Cart.html">Cart</a>
+                                    <a href="Checkout.html">Checkout</a>
+                                    <a href="compare.html">Compare</a>
+                                    <a href="Faq.html">Faq</a>
+                                    <a href="login.html">Login</a>
+                                    <a href="Register.html">Register</a>
+                                </div>
+                        </li>
+                        <li><a href="home.html">Blog</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li><i class="fa-regular fa-user"></i></li>
+                        <li><i class="fa-regular fa-heart"></i></li>
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Main Content -->
+            <!-- First Section Title -->
+            <div class="cart-first">
+                <div class="cart-title">
+                    <h3>Product Detail Accordion</h3>
+                    <div> <span> Home </span> <span><i class="fa-solid fa-forward icon-gap"></i>Product Page</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product Section -->
+
+            <div class="product">
+                <div class="product-main-section ">
+                    <div class="Details-section">
+                        <div class="prods-details-sec ">
+                            <div class="images-sec">
+                                <div class="main-img">
+                                    <img src="./Images/28.jpg" alt="">
+                                </div>
+                                <div class="similar-imgs">
+                                    <div class="img-list">
+                                        <img src="./Images/28.jpg" alt="">
+                                        <img src="./Images/29 (1).jpg" alt="">
+                                        <img src="./Images/27.jpg" alt="">
+                                        <img src="./Images/28.jpg" alt="">
+                                        <img src="./Images/29 (1).jpg" alt="">
+                                        <img src="./Images/27.jpg" alt="">
+                                    </div>
+                                    <div class="control-icons">
+                                        <button id="previcon">&#10094;</button>
+                                        <button id="nexticon">&#10095;</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="details-section">
+                                <h4 class="detail-title">Mantu Women's Solid Slim Fit Classic Round Neck cotton fabric
+                                    T-Shirt.</h4>
+
+                                <div class="reviews">
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-solid fa-star"></i></span>
+                                    <span><i class="fa-regular fa-star"></i></span>
+                                    <span> | </span>
+                                    <span> 992 Ratings </span>
+                                </div>
+
+                                <div class="pricing">
+                                    <h3>$664.00 <span class="discount">-78%</span></h3>
+                                    <h3>SKU#: 5412</h3>
+                                </div>
+                                <div class="old-pricing">
+                                    <h4>M.R.P. : <span class="old-money">$2,999.00</span></h4>
+                                    <h4 class="stock">IN STOCK</h4>
+                                </div>
+                                <div class="live-info">
+                                    <p>Real time <span class="visitor-count">56</span> visitor right now!</p>
+                                    <div class="countdown">
+                                        <div>
+                                            <strong id="days">2</strong>
+                                            <span>Days</span>
+                                        </div>
+                                        <strong id="time"> HH:MM:SS</strong>
+                                        <span>Time is Running Out!</span>
+                                    </div>
+                                </div>
+
+                                <div class="detail-description">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1990.</p>
+                                    <ul>
+                                        <li><strong>Closure :</strong> Hook & Loop</li>
+                                        <li><strong>Sole :</strong> Polyvinyl Chloride</li>
+                                        <li><strong>Width :</strong> Medium</li>
+                                        <li><strong>Outer Material :</strong> A-Grade Standard Quality</li>
+                                    </ul>
+                                </div>
+
+                                <div class="product-options">
+                                    <div class="size-section">
+                                        <h5>SIZE</h5>
+                                        <div class="sizes">
+                                            <button class="active">S</button>
+                                            <button>M</button>
+                                            <button>L</button>
+                                            <button>XL</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-color-section">
+                                        <h5>COLORS</h5>
+                                        <div class="detail-colors">
+                                            <span class="detail-color blue active"></span>
+                                            <span class="detail-color lightblue"></span>
+                                            <span class="detail-color green"></span>
+                                            <span class="detail-color beige"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="action-bar">
+                                    <div class="quantity-control">
+                                        <button>-</button>
+                                        <span>6</span>
+                                        <button>+</button>
+                                    </div>
+                                    <button class="add-cart">ADD TO CART</button>
+                                    <button class="icon-btn"><i class="fa-regular fa-heart"></i></button>
+                                    <button class="icon-btn"><i class="fa-solid fa-share-nodes"></i></button>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="similar-prods">
+                            <div class="sim-item">
+                                <span class="sim-icon"><i class="fa-solid fa-plus"></i></span></i>
+                                <img src="./Images/11.jpg" alt="">
+                                <div class="sim-item-desc">
+                                    <div class="name">Honey Spiced Nutes</div>
+                                    <div class="reviews">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
+                                    </div>
+                                    <div class="prices">
+                                        <p><strong>$32</strong></p>
+                                        <p class="old">$45</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-item">
+                                <span class="sim-icon"><i class="fa-solid fa-plus"></i></span></i>
+                                <img src="./Images/17.jpg" alt="">
+                                <div class="sim-item-desc">
+                                    <div class="name">Honey Spiced Nutes</div>
+                                    <div class="reviews">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
+                                    </div>
+                                    <div class="prices">
+                                        <p>$32</p>
+                                        <p class="old">$45</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sim-item">
+                                <span class="sim-icon"><i class="fa-solid fa-plus"></i></span></i>
+                                <img src="./Images/31.jpg" alt="">
+                                <div class="sim-item-desc">
+                                    <div class="name">Honey Spiced Nutes</div>
+                                    <div class="reviews">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-regular fa-star"></i></span>
+                                    </div>
+                                    <div class="prices">
+                                        <p>$32</p>
+                                        <p class="old">$45</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Details,specifications,vendor,reviews -->
+
+                        <div class="detail-bottom">
+                            <div class="btm-dropdowns">
+                                <div class="content-section">
+                                    <span class="active" id="detail">Details<i
+                                            class="fa-solid fa-chevron-down"></i></span>
+                                    <!-- Detail Section -->
+                                    <div class="detail-button">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an unknown printer took a galley of type and scrambled it to make a
+                                            type
+                                            specimen book. It has survived not only five centuries, but also the
+                                            leap
+                                            into electronic typesetting, remaining essentially unchanged.</p>
+                                        <ul class="detail-list">
+                                            <li><strong>Any Product types that You want</strong> – Simple,
+                                                Configurable</li>
+                                            <li><strong>Downloadable/Digital Products, Virtual Products</strong>
+                                            </li>
+                                            <li><strong>Inventory Management with Backordered items</strong></li>
+                                            <li><strong>Flatlock seams throughout.</strong></li>
+                                        </ul>
+                                        <br>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem
+                                            Ipsum has been the industry's standard dummy text
+                                            ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book.
+                                            It has survived not only five centuries, but also the leap into
+                                            electronic
+                                            typesetting, remaining essentially unchanged.</p><br>
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the
+                                            majority
+                                            have suffered alteration in some form, by injected humour,
+                                            or randomised words which don't look even slightly believable. If you
+                                            are going
+                                            to use a passage of Lorem Ipsum, you need to be sure there isn't
+                                            anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                                            generators on the Internet tend to repeat predefined chunks as
+                                            necessary,
+                                            making this the first true generator on the Internet. It uses a
+                                            dictionary of
+                                            over 200 Latin words, combined with a handful of model sentence
+                                            structures,
+                                            to generate Lorem Ipsum which looks reasonable.
+                                            The generated Lorem Ipsum is therefore always free from repetition,
+                                            injected
+                                            humour, or non-characteristic words etc.</p><br>
+                                    </div>
+
+                                    <span id="specification">specifications <i
+                                            class="fa-solid fa-chevron-down"></i></span>
+                                    <!-- Specification Section -->
+                                    <div class="specifications-button">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text
+                                            ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to make a type specimen book.
+                                            It has survived not only five centuries, but also the leap into electronic
+                                            typesetting, remaining essentially unchanged.</p>
+                                        <ul class="spec-list">
+                                            <li><strong>Model</strong><span>SKU140</span></li>
+                                            <li><strong>Weight</strong><span>500 g</span></li>
+                                            <li><strong>Dimensions</strong><span>35 × 30 × 7 cm</span></li>
+                                            <li><strong>Color</strong><span>Black, Pink, Red, White</span></li>
+                                            <li><strong>Size</strong><span>10 X 20</span></li>
+                                        </ul>
+                                    </div>
+
+                                    <span id="vendor">Vendor <i class="fa-solid fa-chevron-down"></i></span>
+                                    <div class="Vendor-button" ">
+                                        <div class=" vendor-header">
+                                        <img src="./Images/1 (1).jpg" alt="Vendor Image">
+                                        <div class="vendor-info">
+                                            <h3>Ocean Crate</h3>
+                                            <p>Products : <span>358</span></p>
+                                            <p>Sales : <span>5587</span></p>
+                                        </div>
+                                    </div>
+
+                                    <ul class="vendor-details">
+                                        <li><strong>Phone No. :</strong> <span>+00 987654321</span></li>
+                                        <li><strong>Email. :</strong> <span>Example@gmail.com</span></li>
+                                        <li><strong>Address. :</strong> <span>2548 Broaddus Maple Court,
+                                                Madisonville KY
+                                                4783, USA.</span></li>
+                                    </ul>
+
+                                    <p class="vendor-desc">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        Lorem
+                                        Ipsum has been the industry's standard dummy text
+                                        ever since the 1500s, when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book.
+                                        It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged
+                                    </p>
+                                </div>
+
+                                <span id="review">Reviews <i class="fa-solid fa-chevron-down"></i></span>
+                                <div class="review-button" ">
+                                        <div class=" review">
+                                    <img src="./Images/1.jpg" alt="User Image">
+                                    <div class="review-content">
+                                        <div class="review-header">
+                                            <h4>Mariya Lykra</h4>
+                                            <div class="stars">★ ★ ★ ★ ☆</div>
+                                        </div>
+                                        <p>Lorem Ipsum has been te industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled
+                                            it to
+                                            make a type specimen.</p>
+                                    </div>
+                                </div>
+
+                                <div class="review">
+                                    <img src="./Images/2.jpg" alt="User Image">
+                                    <div class="review-content">
+                                        <div class="review-header">
+                                            <h4>Moris Willson</h4>
+                                            <div class="stars">★ ★ ★ ☆ ☆</div>
+                                        </div>
+                                        <p>Lorem Ipsum has been te industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled
+                                            it to
+                                            make a type specimen.</p>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="add-review">
+                                    <h3>Add a Review</h3>
+                                    <p>Your rating: <span class="stars">★☆☆☆☆</span></p>
+
+                                    <form>
+                                        <input type="text" placeholder="Name" required>
+                                        <input type="email" placeholder="Email*" required>
+                                        <textarea rows="4" placeholder="Enter Your Comment" required></textarea>
+                                        <button type="submit">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <!-- Filter Section -->
+            <div class="filter-sec">
+                <div class="filter-top-content">
+                    <h3>Filters</h3>
+                    <div class="fil-line"></div>
+                    <div class="cat-dropdown">
+                        <div class="dropdown-toggle">
+                            <span class="summ">Clothes <i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li class="summ">Men <span>25</span></li>
+                            <li class="summ">Women <span>30</span></li>
+                            <li class="summ">Boy <span>40</span></li>
+                        </ul>
+                    </div>
+                    <div class="cat-dropdown">
+                        <div class="dropdown-toggle">
+                            <span class="summ">Costumes <i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li class="summ">Men <span>25</span></li>
+                            <li class="summ">Women <span>30</span></li>
+                            <li class="summ">Boy <span>40</span></li>
+                        </ul>
+                    </div>
+                    <li class="summ"><a href="">Shoes</a><span>-25</span></li>
+                    <li class="summ"><a href="">Bags</a><span>-40</span></li>
+
+                    <div class="cat-dropdown">
+                        <div class="dropdown-toggle">
+                            <span class="summ">Electronics <i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li class="summ">Laptop <span>25</span></li>
+                            <li class="summ">Air Conditioner <span>30</span></li>
+                            <li class="summ">Watches <span>40</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="filter-middle-content">
+                    <h3>Brands</h3>
+                    <div class="fil-line"></div>
+                      <input type="checkbox" value="Zencart Mart">
+                      <label>Zencart Mart</label><br>
+                      <input type="checkbox" value="Xeta Store">
+                      <label>Xeta Store</label><br>
+                      <input type="checkbox" value="Indiana Store">
+                      <label>Indiana Store</label><br>
+                      <input type="checkbox" value="Samsung">
+                      <label>Samsung</label><br>
+
+                </div>
+                <div class="filter-middle-content">
+                    <h3>Size</h3>
+                    <div class="fil-line"></div>
+                      <input type="checkbox" value="small">
+                      <label>S - Small</label><br>
+                      <input type="checkbox" value="medium">
+                      <label>M - Medium</label><br>
+                      <input type="checkbox" value="large">
+                      <label>L - Large</label><br>
+                      <input type="checkbox" value="xl">
+                      <label>XL - Size</label><br>
+
+                </div>
+                <div class="filter-bottom-content">
+                    <h3>Colors</h3>
+                    <div class="fil-line"></div>
+                    <div class="colors">
+                        <span class="dots color1"></span>
+                        <span class="dots color2"></span>
+                        <span class="dots color3"></span>
+                        <span class="dots color4"></span>
+                        <span class="dots color5"></span>
+                        <span class="dots color6"></span>
+                        <span class="dots color7"></span>
+                        <span class="dots color8"></span>
+                        <span class="dots color9"></span>
+                        <span class="dots color10"></span>
+                    </div>
+                </div>
+                <div class="filter-bottom-content">
+                    <h3>Price</h3>
+                    <div class="fil-line"></div>
+                    <div class="Price">
+
+                    </div>
+                </div>
+                <div class="filter-bottom-content">
+                    <h3>Tags</h3>
+                    <div class="fil-line"></div>
+                    <div class="Tags">
+                        <span><button>Clothes</button></span>
+                        <span class=""><button>Fruits</button></span>
+                        <span class=""> <button>Snacks</button></span>
+                        <span class=""><button>Diary</button></span>
+                        <span><button>SeaFood</button></span>
+                        <span><button>FastFood</button></span>
+                        <span><button>Clothes</button></span>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer-section -->
+    <div class="footer-section">
+        <div class="footer">
+            <div class="footer-top">
+                <div class="grid-1">
+                    <img src="./Images/logo-dark.png" alt="logo">
+                    <p>The Mantu is the biggest market of grocery products. Get your daily needs from our store.
+                    </p>
+                    <img src="./Images/android.png" alt="android">
+                    <img src="./Images/apple.png" alt="apple">
+                </div>
+                <div class="grid-2">
+                    <h4>Category</h4>
+                    <div class="underline"></div>
+                    <ul>
+                        <li>Fashion</li>
+                        <li>Cosmetics</li>
+                        <li>Bags & Purses</li>
+                        <li>Shoes</li>
+                        <li>Belts</li>
+                        <li>Perfumes</li>
+                    </ul>
+                </div>
+                <div class="grid-3">
+                    <h4>Company</h4>
+                    <div class="underline"></div>
+                    <ul>
+                        <li>About us</li>
+                        <li>Delivery</li>
+                        <li>Legal Notice</li>
+                        <li>Terms of Use</li>
+                        <li>Secure Payment</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="grid-4">
+
+                    <h4>Account</h4>
+                    <div class="underline"></div>
+                    <ul>
+                        <li>Sign In</li>
+                        <li>View Cart</li>
+                        <li>Return Policy</li>
+                        <li>Become a Vendor</li>
+                        <li>Affiliate Program</li>
+                        <li>Payments</li>
+                    </ul>
+                </div>
+                <div class="grid-5">
+                    <h4>Contact</h4>
+                    <div class="underline"></div>
+                    <div class="adress">
+                        <p><i class="fa-solid fa-location-dot ad-icon"></i>1234 Elm Street Springfield Avenue,
+                            Brooklyn den, IL
+                            62704 USA.</p>
+                        <p><i class="fa-brands fa-whatsapp ad-icon"></i> +00 9876543210</p>
+                        <p><i class="fa-solid fa-envelope ad-icon"></i> example@email.com</p>
+                        <div class="social-icons">
+                            <span><i class="fa-brands fa-square-facebook"></i></span>
+                            <span><i class="fa-brands fa-square-twitter"></i></span>
+                            <span><i class="fa-brands fa-linkedin"></i></span>
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="topline"></div>
+                <div class="bottom">
+                    <p>Copyright © 2025 The Mantu all rights reserved.</p>
+                    <div>
+                        <img src="./Images/payment.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    </div>
+    </div>
+
+    <script src="productaccordion.js"></script>
+</body>
+
+</html>
